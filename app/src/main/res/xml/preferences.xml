@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 1) 전체 알림 마스터 스위치 -->
+    <SwitchPreferenceCompat
+        android:key="pref_global_push"
+        android:title="전체 알림 설정"
+        android:summary="모든 지점의 앱 푸시 알림을 받습니다"
+        app:defaultValue="true" />
+
+    <!-- 3) CAM1 세부 알림: CAM1 마스터에 종속 -->
+    <PreferenceCategory
+        android:title="CAM1 상세 알림"
+        android:dependency="pref_cam1_master">
+        <SwitchPreferenceCompat
+            android:key="pref_cam1_master"
+            android:title="CAM1 설정"
+            android:summary="CAM1에 대한 전체 알림을 켭니다"
+            app:defaultValue="true"
+            android:dependency="pref_global_push" />
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam1_fall"
+            android:title="전도 알림"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam1_damage"
+            android:title="파손 알림"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam1_smoke"
+            android:title="흡연 알림"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam1_abandon"
+            android:title="유기 알림"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam1_theft"
+            android:title="절도 알림"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam1_assault"
+            android:title="폭행 알림"
+            app:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <!-- 5) CAM2 세부 알림: CAM2 마스터에 종속 -->
+    <PreferenceCategory
+        android:title="CAM2 상세 알림"
+        android:dependency="pref_cam2_master">
+        <SwitchPreferenceCompat
+            android:key="pref_cam2_master"
+            android:title="CAM2 설정"
+            android:summary="CAM2에 대한 전체 알림을 켭니다"
+            app:defaultValue="true"
+            android:dependency="pref_global_push" />
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam2_fall"
+            android:title="전도 알림"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam2_damage"
+            android:title="파손 알림"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam2_smoke"
+            android:title="흡연 알림"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam2_abandon"
+            android:title="유기 알림"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam2_theft"
+            android:title="절도 알림"
+            app:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="pref_cam2_assault"
+            android:title="폭행 알림"
+            app:defaultValue="true"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

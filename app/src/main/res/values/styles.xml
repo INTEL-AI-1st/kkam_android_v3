@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 1) 앱 전체 테마 -->
+    <style name="Theme.Kkam_backup" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- 기본 색상들 -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSecondary">@color/statusNormal</item>
+        <item name="colorOnSecondary">@color/onPrimary</item>
+        <item name="colorSurface">@color/background</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/background</item>
+    </style>
+
+    <!-- 2) 지점 선택용 아웃라인 버튼 스타일 -->
+    <style name="Widget.Kkam.BranchButton"
+        parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="iconPadding">0dp</item>
+    </style>
+</resources>

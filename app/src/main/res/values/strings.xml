@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kkam_backup</string>
+
+    <!-- 접근성용 이미지 설명 -->
+    <string name="app_logo_desc">앱 로고</string>
+
+    <!-- 하드코딩 대신 문자열 리소스 -->
+    <string name="etEmail">Email</string>
+    <string name="tilPassword">Password</string>
+    <string name="btnLogIn">로그인</string>
+    <string name="avatar_desc">Avatar</string>
+</resources>
+
